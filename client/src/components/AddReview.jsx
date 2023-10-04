@@ -54,7 +54,7 @@ const AddReview = () => {
                 <label htmlFor="Review">Review</label>
                 <textarea  value={reviewText} onChange={e => setReviewText(e.target.value)} id="Review" cols="30" rows="10" className="form-control"></textarea>
             </div>
-            <button type = "Submit" onClick = {handleSubmitReview} className="btn btn-primary" type= "Submit">Submit</button>
+            <button type = "Submit" onClick = {handleSubmitReview} className="btn btn-primary">Submit</button>
         </form>
     </div>
   )

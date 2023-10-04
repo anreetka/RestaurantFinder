@@ -53,6 +53,10 @@ const RestaurantList = (props) => {
     };
 
     const renderRating = (restaurant) =>{
+
+        if(!restaurant.count){
+            return <span className="text-warning">0 reviews</span>
+        }
         return(
         <>
         <StarRating rating={restaurant.id}/>
